@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Virtualization</title>
+
+<!-- Bootstrap CSS CDN -->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" crossorigin="anonymous">
+
+<!-- Our Custom CSS -->
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/virtualization-responsive.css">
+<link rel="stylesheet" href="css/Transactional-responsive.css">
+<link rel="stylesheet" href="css/login-responsive.css">
+</head>
+
+<body>
+<div class="wrapper"> 
+  <!-- Sidebar  -->
+  <div id="sidebarOverlayControl" class="">
+    <nav id="sidebar" class="sidebar hideSidebar">
+      <div class="sidebar-header"> <img class="logo" src="images/hpe-logo.svg" alt="Hewlett Packard Enterprise"> <strong><img src="images/hpe-symbole.png" alt="HPE"></strong> </div>
+      <button type="button" id="sidebarHideBtn" class="btn left-sidebar-hide-btn MenuHide"></button>
+      <ul class="list-unstyled components">
+        <li class="nav-item has-submenu"> <a class="nav-link" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="19.351" viewBox="0 0 20 19.351">
+            <defs>
+              <clippath id="clip-path">
+                <rect id="Rectangle_59" data-name="Rectangle 59" width="20" height="20"  transform="translate(0 0)"/>
+              </clippath>
+            </defs>
+            <g id="Group_94" data-name="Group 94" transform="translate(0 0)">
+              <g id="Group_93" data-name="Group 93" clip-path="url(#clip-path)">
+                <path id="Path_140" data-name="Path 140" d="M19.529,10.7a1.608,1.608,0,0,0-2.27,0L14.95,13H12.678a1.649,1.649,0,0,0-1.567-2.215H4.762l-1.7,1.7L.326,15.21l4.117,4.141L6.9,16.9h8.9l3.735-3.928a1.6,1.6,0,0,0,0-2.271M1.9,15.215l1.227-1.222,2.547,2.561L4.446,17.778ZM18.734,12.2l-3.416,3.593H6.477l-2.565-2.58L5.23,11.9h5.881a.552.552,0,0,1,.038,1.1h-1.7v1.111h.309v.008h1.357c.026,0,.05-.007.075-.008h4.223l2.635-2.626a.5.5,0,0,1,.7,0,.485.485,0,0,1,.145.349.5.5,0,0,1-.155.36" />
+                <path id="Path_141" data-name="Path 141" d="M1.606,9.12a1.6,1.6,0,0,0,1.135-.469L5.05,6.35H7.322A1.649,1.649,0,0,0,8.889,8.565h6.349L16.99,6.812l2.684-2.671L15.557,0,13.1,2.451h-8.9L.471,6.379A1.605,1.605,0,0,0,1.606,9.12M18.1,4.137,16.876,5.358,14.329,2.8l1.225-1.224ZM1.266,7.155,4.683,3.563h8.84l2.565,2.579L14.77,7.454H8.889a.553.553,0,0,1-.038-1.1h1.7V5.239h-.309V5.231H8.889c-.026,0-.05.007-.075.008H4.591L1.956,7.865a.5.5,0,0,1-.7,0,.488.488,0,0,1-.144-.348.5.5,0,0,1,.155-.361" fill="#01a982"/>
+              </g>
+            </g>
+          </svg>
+          <span>Transactional</span> </a>
+          <ul class="submenu collapse">
+            <li> <a>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="RadioTransactional" checked>
+                <label class="form-check-label" for="RadioTransactional"> <span>Do you have a few minutes to discuss your upcoming IT initiatives?</span></label>
+              </div>
+              </a> </li>
+            <li> <a>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="RadioTransactional1">
+                <label class="form-check-label" for="RadioTransactional1"> <span>Let’s talk about availability.</span></label>
+              </div>
+              </a> </li>
+            <li> <a>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="RadioTransactional2">
+                <label class="form-check-label" for="RadioTransactional2"><span> What kind of growth do you expect?</span></label>
+              </div>
+              </a> </li>
+          </ul>
+        </li>
+        <li class="nav-item has-submenu"> <a class="nav-link" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+            <g id="Group_37" data-name="Group 37" transform="translate(0)">
+              <path id="Path_91" data-name="Path 91" d="M169.694,34.742v.945h-.945V36.8h.945v.945H170.8V36.8h.945V35.686H170.8v-.945Z" transform="translate(-151.749 -31.242)"/>
+              <path id="Path_92" data-name="Path 92" d="M169.694,134.007v.945h-.945v1.111h.945v.945H170.8v-.945h.945v-1.111H170.8v-.945Z" transform="translate(-151.749 -120.507)"/>
+              <rect id="Rectangle_7" data-name="Rectangle 7" width="1.12" height="5" transform="translate(0.935 7.5)"/>
+              <path id="Path_93" data-name="Path 93" d="M124.082,18.437v1.181l3.5,1.4V19.837Z" transform="translate(-111.582 -16.58)"/>
+              <path id="Path_94" data-name="Path 94" d="M43.206,18.437v1.181l-3.5,1.4V19.837Z" transform="translate(-35.706 -16.58)"/>
+              <rect id="Rectangle_8" data-name="Rectangle 8" width="1.097" height="5" transform="translate(17.946 7.5)"/>
+              <path id="Path_95" data-name="Path 95" d="M.945,34.742v.945H0V36.8H.945v.945H2.056V36.8H3V35.686H2.056v-.945Z" transform="translate(0 -31.242)"/>
+              <path id="Path_96" data-name="Path 96" d="M.945,134.007v.945H0v1.111H.945v.945H2.056v-.945H3v-1.111H2.056v-.945Z" transform="translate(0 -120.507)"/>
+              <path id="Path_97" data-name="Path 97" d="M85.32,168.749v.945h-.945V170.8h.945v.945h1.111V170.8h.945v-1.111h-.945v-.945Z" transform="translate(-75.875 -151.749)"/>
+              <path id="Path_98" data-name="Path 98" d="M85.32,0V.945h-.945V2.056h.945V3h1.111V2.056h.945V.945h-.945V0Z" transform="translate(-75.875)"/>
+              <path id="Path_99" data-name="Path 99" d="M124.082,157.053v-1.181l3.5-1.4v1.181Z" transform="translate(-111.582 -138.911)"/>
+              <path id="Path_100" data-name="Path 100" d="M43.206,157.053v-1.181l-3.5-1.4v1.181Z" transform="translate(-35.706 -138.911)"/>
+              <path id="Path_101" data-name="Path 101" d="M64.037,64.036H55.148V55.147h8.889Zm-7.778-1.111h6.667V56.258H56.259Z" transform="translate(-49.592 -49.591)" fill="#01a982"/>
+              <path id="Path_102" data-name="Path 102" d="M81.651,81.65H77.207V77.206h4.444Zm-3.333-1.111H80.54V78.317H78.318Z" transform="translate(-69.429 -69.428)" fill="#01a982"/>
+            </g>
+          </svg>
+          <span>Virtualization</span> </a>
+          <ul class="submenu collapse">
+            <li> <a>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="RadioTransactional3" checked>
+                <label class="form-check-label" for="RadioTransactional3"> <span>Are you virtualized?</span></label>
+              </div>
+              </a> </li>
+          </ul>
+        </li>
+        <li class="nav-item has-submenu"> <a class="nav-link" href="#">
+          <svg id="Group_39" data-name="Group 39" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13.333" height="20" viewBox="0 0 13.333 20">
+            <defs>
+              <clippath id="clip-path1">
+                <rect id="Rectangle_9" data-name="Rectangle 9" width="13.333" height="20" fill="none"/>
+              </clippath>
+            </defs>
+            <g id="Group_38" data-name="Group 38" clip-path="url(#clip-path)">
+              <path id="Path_103" data-name="Path 103" d="M10.556,6.667V3.889a3.889,3.889,0,1,0-7.778,0V6.667H0V20H13.333V6.667ZM3.889,3.889a2.778,2.778,0,1,1,5.556,0V6.667H3.889Zm8.333,12.778H1.111V7.778H12.222ZM1.111,17.778H12.222v1.111H1.111Z"/>
+              <path id="Path_104" data-name="Path 104" d="M52.966,95.418a1.667,1.667,0,1,0-2.222,1.564v2.325h1.111V96.982a1.664,1.664,0,0,0,1.111-1.564m-1.667.556a.556.556,0,1,1,.556-.556.556.556,0,0,1-.556.556" transform="translate(-44.633 -84.307)" fill="#00b187"/>
+            </g>
+          </svg>
+          <span>Security</span> </a> </li>
+        <li class="nav-item has-submenu"> <a class="nav-link" href="#">
+          <svg id="Group_42" data-name="Group 42" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+            <defs>
+              <clippath id="clip-path2">
+                <rect id="Rectangle_10" data-name="Rectangle 10" width="20" height="20" fill="none"/>
+              </clippath>
+            </defs>
+            <path id="Path_105" data-name="Path 105" d="M77.248,77.247H71.692V71.691h5.556ZM72.8,76.136h3.333V72.8H72.8Z" transform="translate(-64.47 -64.469)" fill="#01a982"/>
+            <g id="Group_41" data-name="Group 41">
+              <g id="Group_40" data-name="Group 40" clip-path="url(#clip-path)">
+                <path id="Path_106" data-name="Path 106" d="M20,10a1.664,1.664,0,0,0-1.227-1.6,8.959,8.959,0,0,0-7.2-7.257,1.656,1.656,0,0,0-3.143-.017,8.958,8.958,0,0,0-7.3,7.3,1.656,1.656,0,0,0,.018,3.145,8.962,8.962,0,0,0,7.252,7.2,1.658,1.658,0,0,0,3.207-.017,8.962,8.962,0,0,0,7.149-7.147A1.665,1.665,0,0,0,20,10M10,1.111a.556.556,0,1,1-.556.556A.556.556,0,0,1,10,1.111M1.667,10.556A.556.556,0,1,1,2.222,10a.556.556,0,0,1-.556.556M10,18.889a.556.556,0,1,1,.556-.555.556.556,0,0,1-.556.555m1.513-1.246a1.668,1.668,0,0,0-.957-.874v-2.88H9.444v2.88a1.666,1.666,0,0,0-.965.888,7.854,7.854,0,0,1-6.21-6.108,1.667,1.667,0,0,0,.962-.994h2.88V9.444H3.231a1.666,1.666,0,0,0-.978-1A7.85,7.85,0,0,1,8.445,2.25a1.664,1.664,0,0,0,1,.98v2.88h1.111V3.231a1.666,1.666,0,0,0,.995-.965,7.852,7.852,0,0,1,6.11,6.213,1.666,1.666,0,0,0-.891.966h-2.88v1.111h2.88a1.666,1.666,0,0,0,.875.958,7.856,7.856,0,0,1-6.132,6.13m6.821-7.087A.556.556,0,1,1,18.889,10a.556.556,0,0,1-.556.556"/>
+              </g>
+            </g>
+          </svg>
+          <span>Remote Work </span></a>
+          <ul class="submenu collapse">
+            <li> <a>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="RadioTransactional4" checked>
+                <label class="form-check-label" for="RadioTransactional4"> <span>Have you considered moving to a consumption model?</span></label>
+              </div>
+              </a> </li>
+          </ul>
+        </li>
+        <li class="nav-item has-submenu"> <a class="nav-link" href="#">
+          <svg id="Group_43" data-name="Group 43" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+            <path id="Path_107" data-name="Path 107" d="M61.589,52.083H52.083v4.753h1.111V53.194H65.725V65.725H53.194V61.589H52.083v5.247H66.836V52.083Z" transform="translate(-46.836 -46.836)"/>
+            <path id="Path_108" data-name="Path 108" d="M77.206,77.207v2.222h1.111V78.318h7.376v7.376H78.318V84.182H77.206v2.623h9.6v-9.6Z" transform="translate(-69.429 -69.429)"/>
+            <path id="Path_109" data-name="Path 109" d="M35.64,33.418H34.529v1.111H27.153V27.153h7.376v1.512H35.64V26.042h-9.6v9.6h9.6Z" transform="translate(-23.419 -23.418)" fill="#01a982"/>
+            <path id="Path_110" data-name="Path 110" d="M0,0V14.753H14.753V10H13.642v3.643H1.111V1.111H13.642V5.247h1.111V0Z" fill="#01a982"/>
+          </svg>
+          <span>Office in a Box</span> </a>
+          <ul class="submenu collapse">
+            <li> <a>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="RadioTransactional5" checked>
+                <label class="form-check-label" for="RadioTransactional5"> <span>Are you providing any remote desktop services?</span></label>
+              </div>
+              </a> </li>
+          </ul>
+        </li>
+        <li class="nav-item has-submenu"> <a class="nav-link" href="#">
+          <svg id="Group_44" data-name="Group 44" xmlns="http://www.w3.org/2000/svg" width="13.333" height="20" viewBox="0 0 13.333 20">
+            <path id="Path_111" data-name="Path 111" d="M6.111,3.333H2.222V7.222H6.111ZM3.333,4.444H5V6.111H3.333Z" fill="#01a982"/>
+            <path id="Path_112" data-name="Path 112" d="M11.111,3.333H7.222V7.222h3.889ZM10,6.111H8.333V4.444H10Z"/>
+            <path id="Path_113" data-name="Path 113" d="M6.111,8.333H2.222v3.889H6.111ZM5,11.111H3.333V9.444H5Z"/>
+            <path id="Path_114" data-name="Path 114" d="M11.111,8.333H7.222v3.889h3.889ZM10,11.111H8.333V9.444H10Z"/>
+            <path id="Path_115" data-name="Path 115" d="M1.111,15.556H12.222V18.89H1.111Zm0-14.445H12.222V14.444H1.111ZM0,20H13.333V0H0Z"/>
+            <rect id="Rectangle_11" data-name="Rectangle 11" width="1.111" height="1.111" transform="translate(6.111 16.667)"/>
+          </svg>
+          <span>Solutions for Applications</span> </a>
+          <ul class="submenu collapse">
+            <li> <a>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="RadioTransactional6" checked>
+                <label class="form-check-label" for="RadioTransactional6"> <span>Customers are turning data into insights that enable innovation, enhance competitiveness, and streamline operations. How are you getting insights from your data? </span></label>
+              </div>
+              </a> </li>
+          </ul>
+        </li>
+        <li class="nav-item has-submenu"> <a class="nav-link" href="#">
+          <svg id="Group_46" data-name="Group 46" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19.942" height="20" viewBox="0 0 19.942 20">
+            <defs>
+              <clippath id="clip-path3">
+                <rect id="Rectangle_12" data-name="Rectangle 12" width="19.942" height="20" fill="none"/>
+              </clippath>
+            </defs>
+            <g id="Group_45" data-name="Group 45" clip-path="url(#clip-path)">
+              <path id="Path_116" data-name="Path 116" d="M13.477,10.7A5.35,5.35,0,1,0,8.138,5.35,5.349,5.349,0,0,0,13.477,10.7M9.783,7.377h1.3a6.519,6.519,0,0,0,.814,1.884,4.239,4.239,0,0,1-2.11-1.884M9.264,5.35a4.253,4.253,0,0,1,.076-.788h1.5c-.022.247-.037.5-.037.755a8.427,8.427,0,0,0,.056.934h-1.5a4.181,4.181,0,0,1-.1-.9m4.213-4.064a4.565,4.565,0,0,1,1.28,2.149H12.2a4.565,4.565,0,0,1,1.28-2.149m1.5,3.276a6.9,6.9,0,0,1,.043.754,7.31,7.31,0,0,1-.066.935H12a7.306,7.306,0,0,1-.067-.934,7.191,7.191,0,0,1,.043-.755Zm2.711.788a4.245,4.245,0,0,1-.1.9h-1.5a8.207,8.207,0,0,0,.057-.935c0-.256-.015-.507-.037-.754h1.5a4.253,4.253,0,0,1,.076.788M13.477,9.412a4.507,4.507,0,0,1-1.238-2.035h2.477a4.509,4.509,0,0,1-1.239,2.035m1.585-.152a6.54,6.54,0,0,0,.814-1.883H17.17A4.242,4.242,0,0,1,15.062,9.26m2.164-5.825h-1.3a6.349,6.349,0,0,0-.838-1.987,4.23,4.23,0,0,1,2.142,1.987M11.871,1.447a6.355,6.355,0,0,0-.838,1.988H9.726a4.246,4.246,0,0,1,2.145-1.988" fill="#01a982"/>
+              <path id="Path_117" data-name="Path 117" d="M19.464,11.232a1.63,1.63,0,0,0-2.3,0l-2.34,2.332h-2.3a1.672,1.672,0,0,0-1.588-2.245H4.5L2.778,13.038,0,15.8,4.173,20,6.66,17.516h9.018l3.786-3.981a1.628,1.628,0,0,0,0-2.3M1.592,15.808l1.244-1.239,2.582,2.6-1.242,1.24Zm17.066-3.06-3.463,3.641H6.235l-2.6-2.614L4.97,12.446h5.962a.56.56,0,0,1,.038,1.118H9.243V14.69h.313V14.7h1.376c.026,0,.05-.007.076-.008h4.28l2.671-2.661a.5.5,0,0,1,.709,0,.49.49,0,0,1,.147.353.508.508,0,0,1-.157.365"/>
+            </g>
+          </svg>
+          <span>Business Continuity</span> </a>
+          <ul class="submenu collapse">
+            <li> <a>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="RadioTransactional7" checked>
+                <label class="form-check-label" for="RadioTransactional7"> <span>What measures are you currently using to combat catastrophic loss due to data corruption, system failure, malicious actors, or ransomware?s</span></label>
+              </div>
+              </a> </li>
+          </ul>
+        </li>
+        <li class="nav-item has-submenu"> <a class="nav-link" href="#">
+          <svg id="Group_47" data-name="Group 47" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+            <path id="Path_118" data-name="Path 118" d="M12.778,12.778H7.222V7.222h5.556ZM8.333,11.667h3.333V8.334H8.333Z" fill="#01a982"/>
+            <path id="Path_119" data-name="Path 119" d="M16.111,16.111H3.889V3.889H16.111ZM5,15H15V5H5Z"/>
+            <path id="Path_120" data-name="Path 120" d="M1.111,1.111H18.889V18.889H1.111ZM0,20H20V0H0Z"/>
+          </svg>
+          <span> Shared Storage</span> </a>
+          <ul class="submenu collapse">
+            <li> <a>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="RadioTransactional8" checked>
+                <label class="form-check-label" for="RadioTransactional8"> <span>Are you currently using cloud storage in your environment?</span></label>
+              </div>
+              </a> </li>
+          </ul>
+        </li>
+        <li class="nav-item has-submenu"> <a class="nav-link" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19.999" viewBox="0 0 20 19.999">
+            <g id="Group_48" data-name="Group 48" transform="translate(0 0)">
+              <path id="Path_121" data-name="Path 121" d="M11.667,11.667H8.334V8.334h3.333Zm1.111-4.445H7.222v5.556h5.556Z"/>
+              <path id="Path_122" data-name="Path 122" d="M13.889,13.889H6.111V6.111h7.778ZM15,5H5V15H15Z"/>
+              <rect id="Rectangle_13" data-name="Rectangle 13" width="1.111" height="1.111" transform="translate(9.445 9.444)" fill="#01a982"/>
+              <rect id="Rectangle_14" data-name="Rectangle 14" width="1.111" height="5.556" transform="translate(2.222 7.222)"/>
+              <rect id="Rectangle_15" data-name="Rectangle 15" width="1.111" height="5.556" transform="translate(16.667 7.222)"/>
+              <rect id="Rectangle_16" data-name="Rectangle 16" width="5.556" height="1.111" transform="translate(7.222 16.667)"/>
+              <rect id="Rectangle_17" data-name="Rectangle 17" width="5.556" height="1.111" transform="translate(7.222 2.222)"/>
+              <path id="Path_123" data-name="Path 123" d="M18.889,15v3.1l-1.83-1.829-.785.786L18.1,18.889H15V20h5V15Z" fill="#01a982"/>
+              <path id="Path_124" data-name="Path 124" d="M0,0V5H1.111V1.9L2.94,3.726l.786-.786L1.9,1.111H5V0Z" fill="#01a982"/>
+              <path id="Path_125" data-name="Path 125" d="M0,15v5H5V18.889H1.9L3.726,17.06l-.786-.786L1.111,18.1V15Z" fill="#01a982"/>
+              <path id="Path_126" data-name="Path 126" d="M15,0V1.111h3.1L16.273,2.94l.786.786,1.83-1.83V5H20V0Z" fill="#01a982"/>
+            </g>
+          </svg>
+          <span>Hyperconverged Infrastructure (HCI)</span></a>
+          <ul class="submenu collapse">
+            <li> <a>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="RadioTransactional9" checked>
+                <label class="form-check-label" for="RadioTransactional9"> <span>What are the new, demanding apps or virtualized workloads you are planning to deploy in the next 12 months?</span></label>
+              </div>
+              </a> </li>
+          </ul>
+        </li>
+        <li class="nav-item has-submenu"> <a class="nav-link" href="#">
+          <svg id="Group_49" data-name="Group 49" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+            <rect id="Rectangle_18" data-name="Rectangle 18" width="1.111" height="3.889" transform="translate(6.111 8.055)"/>
+            <rect id="Rectangle_19" data-name="Rectangle 19" width="1.111" height="3.889" transform="translate(12.778 8.055)"/>
+            <rect id="Rectangle_20" data-name="Rectangle 20" width="1.111" height="2.222" transform="translate(9.445)" fill="#01a982"/>
+            <rect id="Rectangle_21" data-name="Rectangle 21" width="1.111" height="4.444" transform="translate(9.445 4.445)" fill="#01a982"/>
+            <rect id="Rectangle_22" data-name="Rectangle 22" width="1.111" height="4.444" transform="translate(9.445 11.112)" fill="#01a982"/>
+            <rect id="Rectangle_23" data-name="Rectangle 23" width="1.111" height="2.222" transform="translate(9.445 17.778)" fill="#01a982"/>
+            <rect id="Rectangle_24" data-name="Rectangle 24" width="1.111" height="5" transform="translate(6.111 0.556)"/>
+            <rect id="Rectangle_25" data-name="Rectangle 25" width="1.111" height="5" transform="translate(12.778 0.556)"/>
+            <rect id="Rectangle_26" data-name="Rectangle 26" width="1.111" height="5" transform="translate(6.111 14.445)"/>
+            <rect id="Rectangle_27" data-name="Rectangle 27" width="1.111" height="5" transform="translate(12.778 14.445)"/>
+            <rect id="Rectangle_28" data-name="Rectangle 28" width="5.556" height="1.111" transform="translate(14.444 9.444)"/>
+            <rect id="Rectangle_29" data-name="Rectangle 29" width="5" height="1.111" transform="translate(0 9.444)"/>
+            <rect id="Rectangle_30" data-name="Rectangle 30" width="4.444" height="1.111" transform="translate(7.778 9.445)"/>
+            <rect id="Rectangle_31" data-name="Rectangle 31" width="1.667" height="1.111" transform="translate(17.778 6.111)" fill="#01a982"/>
+            <rect id="Rectangle_32" data-name="Rectangle 32" width="1.667" height="1.111" transform="translate(17.778 12.778)" fill="#01a982"/>
+            <rect id="Rectangle_33" data-name="Rectangle 33" width="4.444" height="1.111" transform="translate(11.112 6.111)" fill="#01a982"/>
+            <rect id="Rectangle_34" data-name="Rectangle 34" width="4.444" height="1.111" transform="translate(11.112 12.778)" fill="#01a982"/>
+            <rect id="Rectangle_35" data-name="Rectangle 35" width="4.444" height="1.111" transform="translate(4.445 6.111)" fill="#01a982"/>
+            <rect id="Rectangle_36" data-name="Rectangle 36" width="4.444" height="1.111" transform="translate(4.445 12.778)" fill="#01a982"/>
+            <rect id="Rectangle_37" data-name="Rectangle 37" width="1.667" height="1.111" transform="translate(0.555 6.111)" fill="#01a982"/>
+            <rect id="Rectangle_38" data-name="Rectangle 38" width="1.667" height="1.111" transform="translate(0.555 12.778)" fill="#01a982"/>
+            <rect id="Rectangle_39" data-name="Rectangle 39" width="4.444" height="1.111" transform="translate(7.778 2.778)"/>
+            <path id="Path_127" data-name="Path 127" d="M14.444,3.889h1.667v5h1.111V2.778H14.444Z"/>
+            <path id="Path_128" data-name="Path 128" d="M5.556,16.111H3.889v-5H2.778v6.111H5.556Z"/>
+            <path id="Path_129" data-name="Path 129" d="M16.111,11.111v5H14.444v1.111h2.778V11.111Z"/>
+            <path id="Path_130" data-name="Path 130" d="M3.889,8.889v-5H5.556V2.778H2.778V8.889Z"/>
+            <rect id="Rectangle_40" data-name="Rectangle 40" width="4.444" height="1.111" transform="translate(7.778 16.111)"/>
+          </svg>
+          <span>Database and Applications </span></a>
+          <ul class="submenu collapse">
+            <li> <a>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="RadioTransactional10" checked>
+                <label class="form-check-label" for="RadioTransactional10"> <span>What is the application workload and what software accesses this data?</span></label>
+              </div>
+              </a> </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="get-bant"> <a href="#"><img src="images/Get-bant.svg" alt="Get to BANT"> <span>Get to BANT</span></a> </div>
+    </nav>
+  </div>
+  <!-- Page Content  -->
+  <div id="content">
+    <div class="row">
+      <div class="col-md-6">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <button type="button" id="sidebarCollapse" class="btn btn-left"></button>
+          <!-- navbar show hide -->
+          <button type="button" id="sidebarShowBtn" class="btn left-sidebar-show-btn"></button>
+          <!-- <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> </button> --> 
+        </nav>
+      </div>
+      <div class="col-md-6">
+        <nav class="navbar1 navbar-expand-lg navbar-light bg-light">
+          <button type="button" id="sidebarCollapse1" class="btn1 btn-right"> </button>
+          <!-- <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <i class="fas fa-align-justify"></i> </button> --> 
+        </nav>
+      </div>
+    </div>
+    <div class="container">
+      <div class="page-title-wrapper">
+        <h2>Virtualization Channel</h2>
+        <p>Nulla blandit neque in viverra aliquam. Suspendisse quis pellentesque quam, at ultricies ex. Maecenas sit amet ligula tempor, facilisis velit non, ornare libero.</p>
+      </div>
+      <div class="body-contain-area clearfix">
+        <div class="Qustions-channel-list">
+          <p>Are you virtualized?</p>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="Radiovirtualized1" checked>
+            <label class="form-check-label" for="Radiovirtualized1"> Yes</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="Radiovirtualized2">
+            <label class="form-check-label" for="Radiovirtualized2"> No</label>
+          </div>
+        </div>
+        <div class="Qustions-channel-list">
+          <p>Would you like to hear more about HPE virtualization for small and medium businesses?</p>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="Radiovirtualized3">
+            <label class="form-check-label" for="Radiovirtualized3"> Yes</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="Radiovirtualized4">
+            <label class="form-check-label" for="Radiovirtualized4"> No</label>
+          </div>
+        </div>
+        <div class="Qustions-channel-list">
+          <p>How would you describe the ways you're dealing with legacy IT systems?</p>
+          <div class="form-group">
+            <input type="text" class="form-control" id="Inputvirtualized1"  name="" placeholder="Begin typing here">
+          </div>
+        </div>
+        <div class="Qustions-channel-list">
+          <p>Are there business benefits you would expect if you could deliver additional IT infrastructure on demand for new services or projects? </p>
+          <div class="form-group">
+            <input type="text" class="form-control" id="Inputvirtualized2"  name="" placeholder="Begin typing here">
+          </div>
+        </div>
+        <div class="cta-area-section">
+          <button type="submit" class="btn get-bant-cta">Go to BANT →</button>
+          <button type="submit" class="btn next-cta">Next Question →</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- FAQ Expand Button -->
+    <div class="mobile-faq-icon">
+      <button type="button" id="faqShowBtn" class="btn faq-mobile-show-btn"></button>
+    </div>
+    <!-- FAQ Expand Button e--> 
+  </div>
+  <!-- Right  Content  -->
+  <div id="sidebar1OverlayControl" class="">
+    <nav id="sidebar1" class="mediaDevice">
+      <button type="button" id="sidebar1HideBtn" class="faq-hide-btn MenuHide"></button>
+      <div class="sidebar-header">
+        <div class="icon-wrapper"> <img src="images/purple-icon.svg" alt="Purple Icon"> </div>
+        <h3>Did you Know?</h3>
+      </div>
+      <!-- fact accordion start -->
+      <div class="fact-accordion" id="myAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne">Fact 1</button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#myAccordion">
+            <div class="card-body">
+              <p>By 2025, 60% of enterprises will fund Line-of-Business and IT projects through OPEX budgets, matching how vendors provide their services with a focus on outcomes that are determined by SLAs and KPIs.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo">Fact 2</button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+            <div class="card-body">
+              <p>Mention HPE has a trade-in program. 
+                Reference: https://promotions.ext.hpe.com/WMCF.Web/us/en/landing/promotion/89705/</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree">Fact 3</button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+            <div class="card-body">
+              <p>A mission critical task, service, or system is one whose failure or disruption would cause an entire operation or business to grind to a halt. It is a type of task, service, or system that is indispensable to continuing operations.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour">Fact 4</button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+            <div class="card-body">
+              <p>A recent IDC study estimates the cost of downtime per hour is over $25K for almost a third of companies and over $100K for one sixth of companies. This means that for many customers, avoiding a single downtime event can easily pay for the cost of protecting </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFive">Fact 5</button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+            <div class="card-body">
+              <p>There are major cost savining for consolidation aging virtulized enviroments. Virtualized environments network complexity and new management challenges. To attain the full benefits of a virtualized environment, planning and design must be coordinated among </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fact accordion end -->
+      <div class="sidebar-footer-form">
+        <div class="form-group">
+          <label for="sidebar-footer-form" class="form-label">Notes:</label>
+          <textarea class="form-control"  name="" placeholder="Begin typing here..." id="sidebar-footer-form" style="height:180px"></textarea>
+        </div>
+      </div>
+    </nav>
+  </div>
+ </div>
+
+<!-- jQuery CDN - Slim version (=without AJAX) --> 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript">
+
+	document.addEventListener("DOMContentLoaded", function(){
+
+		document.querySelectorAll('.sidebar .nav-link').forEach(function(element){
+
+			element.addEventListener('click', function (e) {
+        var current = document.getElementsByClassName("active");
+        if (current.length > 0) {
+          current[0].className = current[0].className.replace(" active", "");
+        }
+        this.className += " active";
+
+				let nextEl = element.nextElementSibling;
+				let parentEl  = element.parentElement;
+        //console.log(parentEl);
+				if(nextEl) {
+					e.preventDefault();
+					let mycollapse = new bootstrap.Collapse(nextEl);
+
+			  		if(nextEl.classList.contains('show')){
+			  			mycollapse.hide();
+			  		} else {
+			  			mycollapse.show();
+			  			// find other submenus with class=show
+			  			var opened_submenu = parentEl.parentElement.querySelector('.submenu.show');
+			  			// if it exists, then close all of them
+						if(opened_submenu){
+							new bootstrap.Collapse(opened_submenu);
+						}
+
+			  		}
+		  		}
+
+			});
+		})
+
+	}); 
+	// DOMContentLoaded  end
+</script> 
+<script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+				 $('.btn-left').toggleClass('active');
+            });
+        });
+    </script> 
+<script type="text/javascript">
+        /*sidebar hide and show function */
+        $(document).ready(function () {
+            $('#sidebarHideBtn').on('click', function () {
+                $('#sidebar').addClass('hideSidebar');		        
+                $('#sidebarHideBtn').addClass('MenuHide');
+                $('#sidebarOverlayControl').removeClass('sidebar-overlay'); 
+            });
+        });
+        $(document).ready(function () {
+            $('#sidebarShowBtn').on('click', function () {
+              $('#sidebar').removeClass('hideSidebar');	
+              $('#sidebarHideBtn').removeClass('MenuHide');
+              $('#sidebarOverlayControl').addClass('sidebar-overlay');	
+            });
+        });
+
+        /*FAQ sidebar hide and show function For Mobile */
+        $(document).ready(function () {
+            $('.faq-hide-btn').on('click', function () {
+                $('#sidebar1').removeClass('showSidebar1');		        
+                $('#sidebar1OverlayControl').removeClass('sidebar1-overlay');	
+                $('#sidebar1HideBtn').addClass('MenuHide');
+            });
+        });
+        $(document).ready(function () {
+            $('#faqShowBtn').on('click', function () {
+              $('#sidebar1').addClass('showSidebar1');	
+              $('#sidebar1OverlayControl').addClass('sidebar1-overlay');	
+              $('#sidebar1HideBtn').removeClass('MenuHide');
+            });
+        });
+    </script> 
+<script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse1').on('click', function () {
+                $('#sidebar1').toggleClass('active');
+				$('.btn-right').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+</html>

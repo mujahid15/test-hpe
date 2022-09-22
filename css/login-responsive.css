@@ -1,0 +1,139 @@
+
+@media (max-width:1600px) {
+  .hpe-login-wrapper{
+    background-position: 45% -50px;
+    border: 25px solid #01A982;
+    background-repeat: repeat-y;
+  }
+  .hpe-login-wrapper .hpe-login-box{
+    margin: 100px auto 60px auto; 
+    padding: 100px;
+  }
+  .hpe-login-wrapper .hpe-login-box .logo-wrapper img{
+    max-width: 300px;
+  }
+}
+@media (max-width:1200px) {
+  .hpe-login-wrapper .hpe-login-box{
+    margin: 90px auto 50px auto;
+    padding: 90px;
+  }
+  .hpe-login-wrapper{
+      background-position: 40% center;
+  }
+}
+@media (max-width:1024px) {
+  .hpe-login-wrapper{
+    background-position: 53% -110px;
+    border: 20px solid #01A982;
+  }
+  .hpe-login-wrapper .hpe-login-box{
+    margin: 80px auto 40px auto;
+    padding: 70px;
+  }
+  .hpe-login-wrapper .hpe-login-box .logo-wrapper img{
+    max-width: 270px;
+  }
+  .hpe-login-wrapper .hpe-login-header{
+    padding: 45px 0px 10px 0px;
+  }
+  .hpe-login-wrapper .hpe-login-header h2{
+    font-size: 20px;
+  }
+  .hpe-login-wrapper .hpe-login-box input{
+    /* padding: 10px; */
+    margin: 15px 0px;
+  }
+  .hpe-login-wrapper .hpe-login-welcome-message{
+    padding: 15px;
+    font-size: 16px;
+  }
+}
+@media (max-width:992px) {
+  .hpe-login-wrapper{
+  background-position: 50% -140px;
+  border: 20px solid #01A982;
+  }
+  .hpe-login-wrapper .hpe-login-box{
+    margin: 70px auto 30px auto;
+    padding: 50px;
+  }
+  .hpe-login-wrapper .hpe-login-box .logo-wrapper img{
+    max-width: 230px;
+  }
+  .hpe-login-wrapper .hpe-login-header{
+    padding: 40px 0px 10px 0px;
+  }
+  .hpe-login-wrapper .hpe-login-header h2{
+    font-size: 20px;
+  }
+  .hpe-login-wrapper .hpe-login-box input{
+    /* padding: 10px; */
+    margin: 20px 0px;
+  }
+  .hpe-login-wrapper .hpe-login-welcome-message{
+    margin-top: 90px;
+    padding: 15px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width:768px) {
+  .hpe-login-wrapper{
+  background-position: 53% -110px;
+  border: 20px solid #01A982;
+  }
+  .hpe-login-wrapper .hpe-login-box{
+    margin: 60px auto 20px auto;
+    padding: 40px;
+  }
+  .hpe-login-wrapper .hpe-login-box .logo-wrapper img{
+    max-width: 200px;
+  }
+  .hpe-login-wrapper .hpe-login-header{
+    padding: 35px 0px 10px 0px;
+  }
+  .hpe-login-wrapper .hpe-login-header h2{
+    font-size: 20px;
+  }
+  .hpe-login-wrapper .hpe-login-box input{
+    /* padding: 10px; */
+    margin: 15px 0px;
+  }
+  .hpe-login-wrapper .hpe-login-box button{
+    font-size: 14px;
+  }
+  .hpe-login-wrapper .hpe-login-welcome-message{
+    margin-top: 80px;
+    padding: 15px;
+    font-size: 12px!important;
+  }
+  .hpe-login-wrapper .hpe-login-welcome-message p{
+    font-size: 14px!important;  
+  }
+}
+@media (max-width:576px) {
+  .hpe-login-wrapper{
+  background-position: 53% -180px;
+  border: 20px solid #01A982;
+  }
+  .hpe-login-wrapper .hpe-login-box{
+    margin: 50px auto 0px auto;
+    padding: 30px;
+  }
+  .hpe-login-wrapper .hpe-login-box .logo-wrapper img{
+    max-width: 175px;
+  }
+}
+@media (max-width:375px) {
+.hpe-login-wrapper{
+  background-position: 53% -240px;
+  border: 20px solid #01A982;
+}
+.hpe-login-wrapper .hpe-login-box{
+  padding: 25px;
+}
+.hpe-login-wrapper .hpe-login-box .logo-wrapper img{
+  max-width: 142px;
+}
+}

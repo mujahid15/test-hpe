@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* CSS Document */
+@media only screen and (max-width: 1450px) and (min-width: 1365px) {
+  svg.Virtualization, svg.Security, svg.RemoteWork, svg.OfficeBox, svg.soluation-application, svg.busniness-community, svg.shared-storage, svg.Hyperconverged, svg.database-applications {
+    width: 70px;
+    height: 70px;
+  }
+  .category-tab-item {
+    padding: 0px;
+  }
+  .category-tab-item li {
+    font-size: 17px;
+    line-height: 19px;
+  }
+}
+@media only screen and (max-width: 1366px) and (min-width: 414px) {
+  svg.Virtualization, svg.Security, svg.RemoteWork, svg.OfficeBox, svg.soluation-application, svg.busniness-community, svg.shared-storage, svg.Hyperconverged, svg.database-applications {
+    width: 50px;
+    height: 50px;
+  }
+  .category-tab-item {
+    padding: 0px;
+  }
+  .category-tab-item li {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .category-tab-item li:nth-child(2) {
+    min-height: 60px;
+  }
+  .category-tabs-header {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .tab-title {
+    padding: 10px;
+  }
+}
+@media only screen and (max-width: 413px) and (min-width: 120px) {
+  .category-tabs-header {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  svg.Virtualization, svg.Security, svg.RemoteWork, svg.OfficeBox, svg.soluation-application, svg.busniness-community, svg.shared-storage, svg.Hyperconverged, svg.database-applications {
+    width: 70px;
+    height: 70px;
+  }
+  .category-tab-item:nth-child(1), .category-tab-item:nth-child(2), .category-tab-item:nth-child(4), .category-tab-item:nth-child(5), .category-tab-item:nth-child(7), .category-tab-item:nth-child(8), .category-tab-item:nth-child(1), .category-tab-item:nth-child(2), .category-tab-item:nth-child(3), .category-tab-item:nth-child(4), .category-tab-item:nth-child(5), .category-tab-item:nth-child(6) {
+    border-right: none;
+    border-bottom: 1px solid #BFBFBF;
+  }
+  .category-tab-item {
+    width: 100%;
+    padding: 20px 0px 0px 0px;
+  }
+  .category-tab-item li {
+    font-size: 15px;
+    line-height: 17px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+  }
+  .category-tab-item li:nth-child(2) {
+    min-height: auto;
+  }
+  #content .body-contain-area .cta-area-section {
+    float: none;
+    margin-right: 0px;
+  }
+  #content .body-contain-area .cta-area-section .get-bant-cta, #content .body-contain-area .cta-area-section .next-cta {
+    display: block;
+    width: 140px;
+    margin: 0px auto;
+    margin-top: 12px;
+  }
+  .category-tabs-section {
+    margin-bottom: 0px;
+  }
+}

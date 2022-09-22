@@ -16,6 +16,10 @@ VERTUALIZATION PAGE
 .MenuHide {
   display: none !important;
 }
+.get-bant.active{
+  max-width: 80px!important;
+  min-width: 80px!important;
+}
 @media only screen and (max-width: 1500px) and (min-width: 120px) {
 	.container {
     max-width: 100%;
@@ -27,6 +31,10 @@ VERTUALIZATION PAGE
     min-width: 200px;
     max-width: 200px;
   }
+  #sidebar .get-bant{
+    min-width: 200px;
+  }
+
   [type="radio"]:checked + label, [type="radio"]:not(:checked) + label {
     width: 120px;
   }
@@ -98,12 +106,21 @@ VERTUALIZATION PAGE
     word-wrap: break-word;
   }
 }
-
+@media screen and (max-width: 992px) {
+  .faq-sidebar-header{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+    background-color: #fff;
+    box-shadow: 5px 5px 5px #efeeee;
+  }
+}
 @media only screen and (max-width: 896px) and (min-width: 120px) {
   
-  #sidebar.hideSidebar .sidebar-header, #sidebar.hideSidebar .list-unstyled > *, #sidebar.hideSidebar .get-bant > * {
+  /* #sidebar.hideSidebar .sidebar-header, #sidebar.hideSidebar .list-unstyled > *, #sidebar.hideSidebar .get-bant > * {
     display: none;
-  }
+  } */
   #content .body-contain-area .Qustions-channel-list p {
     word-wrap: break-word;
     font-size: 16px;
@@ -112,8 +129,9 @@ VERTUALIZATION PAGE
     font-size: 16px;
   }
   #content .body-contain-area .cta-area-section .get-bant-cta, #content .body-contain-area .cta-area-section .next-cta {
-    font-size: 16px;
-    padding: 10px 10px 3px 10px;
+    font-size: 12px;
+    padding: 8px 10px 5px 10px;
+    width: 90px;
   }
   #content .body-contain-area .cta-area-section {
     margin-right: 20%;
@@ -162,20 +180,17 @@ VERTUALIZATION PAGE
     border: 2px transparent;
   }
   .hideSidebar {
-    display: none !important;
-    max-width: 0px !important;
-    transition: 1s !important;
+    min-width: 0px!important;
+    max-width: 0px!important;
   }
   .showSidebar {
-    display: block !important;
     max-width: 46% !important;
-    transition: 1s !important;
   }
   .MenuHide {
     display: none !important;
   }
   .sidebar .nav-link span {
-    display: inline-block;
+    display: initial;
   }
   #sidebar.active .nav-link span {
     display: block;
@@ -185,12 +200,18 @@ VERTUALIZATION PAGE
   }
   #sidebar {
     padding-bottom: 30px;
-    min-width: 250px;
+    min-width: 220px;
     z-index: 999;
     position: fixed;
     top: 0px;
     left: 0px;
     text-align: left;
+  }
+  #sidebar .get-bant {    
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    min-width: 229px;
   }
   #content .body-contain-area .Qustions-channel-list {
     margin-bottom: 10px;
@@ -220,9 +241,6 @@ VERTUALIZATION PAGE
   #content .body-contain-area .form-check {
     margin-bottom: 10px;
   }
-  #sidebar .get-bant {
-    bottom: 0px;
-  }
   .nav-link {
     padding: 15px;
   }
@@ -242,11 +260,18 @@ VERTUALIZATION PAGE
     transition: all .5s;
   }
   #sidebar1 {
-    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
     min-height: auto;
+    min-width: 0px;
     max-width: 100%;
-    /* testing purpuse off that css by shabab*/
-    /* min-width: 100%; */
+    height: 90%;
+    overflow-x: hidden;
+    width: 0px;
+    border: 0px;
+    opacity: 0;
+    transition: all .5s!important;
   }
   #sidebarCollapse1 {
     display: none;
@@ -255,15 +280,22 @@ VERTUALIZATION PAGE
     display: block !important;
     position: fixed;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    top: 5%!important;
+    min-width: 85%!important;
+    transform: translate(-50%, 0%);
     border-left: 0px !important;
     max-height: 600px;
-    overflow: scroll;
+    overflow: scroll;    
+    opacity: 1!important;
+    
+  }
+  .hideSidebar1{
+    min-width: 0%!important;
+    top: 50%!important;
   }
   #sidebar1HideBtn {
     position: sticky;
-    z-index: 999;
+    z-index: 999999;
     right: 3%;
     top: 3%;
     display: initial;
@@ -273,8 +305,7 @@ VERTUALIZATION PAGE
     width: 25px;
     border: 2px solid #2d1c46;
     border-radius: 50%;
-    float: right;
-    transition: all .5s;
+    float: right;   
   }
   #faqShowBtn {
     position: fixed;
@@ -311,7 +342,7 @@ VERTUALIZATION PAGE
 @media only screen and (max-width: 896px) and (min-width: 120px) and (orientation:landscape) {
 .list-unstyled {
     overflow: auto;
-	height: 290px;
+	  height: 83%;
   }
 .logo {
     width: 30%;
@@ -333,6 +364,9 @@ VERTUALIZATION PAGE
     padding-right: 6px;
     width: 13%;
 }
+#sidebar .get-bant {    
+  min-width: 224px;
+}
 .sidebar li .submenu li a {
     padding-top: 7px;
     padding-bottom: 3px;
@@ -353,13 +387,9 @@ VERTUALIZATION PAGE
 #sidebar .sidebar-header {
     padding: 10px 15px 15px 10px;
 }
-.showSidebar1 {
-top: 95%;
-}
-#sidebar1 {
-min-width: 85%;
-padding-bottom: 300px;
-}
+/* #sidebar1 {
+  min-width: 85%;
+} */
 #content .body-contain-area .cta-area-section {
 display: flex !important;
 justify-content: flex-start !important;
@@ -369,10 +399,10 @@ float: none;
 }
 
 @media only screen and (max-width: 843px) and (min-width: 767px) {
-  #sidebar1 {
-    min-width: 430px;
+  /* #sidebar1 {
+    width: 85%;
     max-width: 430px;
-  }
+  } */
 }
 
 @media only screen and (max-width: 736px) {
@@ -399,13 +429,43 @@ float: none;
     width: 11%;
 }
 }
+@media only screen and (max-width: 575px){
+  .faq-sidebar-header{
+    height: 75px;
+  }
+  #sidebar1 .sidebar-header .icon-wrapper{
+    float: left;
+    padding-top: 10px;
+  }
+  #sidebar1 .sidebar-header h3{
+    float: left;
+    padding-top: 15px;
+  }
+}
 
+@media only screen and (max-width: 320px){
+  #sidebar1 .sidebar-header .icon-wrapper img{
+    height: 45px;
+    width: 45px;
+  }
+  .faq-sidebar-header{
+    height: 65px;
+  }
+  #sidebar1 .sidebar-header .icon-wrapper{
+    padding-top: 10px;
+  }
+  #sidebar1 .sidebar-header h3{
+    padding-top: 10px;
+    font-size: 18px;
+  }
+  #faqShowBtn{
+    width: 50px;
+    height: 50px;
+  }
+}
 
 @media only screen and (max-width: 411px) and (min-width: 120px) {
   /*updated by shabab */
-	#content {
-      /* padding: 10px; */
-  }
   .container{
     padding: 0;
   }

@@ -23,7 +23,7 @@
   <!-- Sidebar  -->
   <div id="sidebarOverlayControl" class="">
     <nav id="sidebar" class="sidebar hideSidebar">
-      <div class="sidebar-header"> <img class="logo" src="images/hpe-logo.svg" alt="Hewlett Packard Enterprise"> <strong><img src="images/hpe-symbole.png" alt="HPE"></strong> </div>
+      <div class="sidebar-header "> <img class="logo" src="images/hpe-logo.svg" alt="Hewlett Packard Enterprise"> <strong><img src="images/hpe-symbole.png" alt="HPE"></strong> </div>
       <button type="button" id="sidebarHideBtn" class="btn left-sidebar-hide-btn MenuHide"></button>
       <ul class="list-unstyled components">
         <li class="nav-item has-submenu"> <a class="nav-link" href="#">
@@ -217,8 +217,7 @@
               <path id="Path_125" data-name="Path 125" d="M0,15v5H5V18.889H1.9L3.726,17.06l-.786-.786L1.111,18.1V15Z" fill="#01a982"/>
               <path id="Path_126" data-name="Path 126" d="M15,0V1.111h3.1L16.273,2.94l.786.786,1.83-1.83V5H20V0Z" fill="#01a982"/>
             </g>
-          </svg>
-          <span>Hyperconverged Infrastructure (HCI)</span></a>
+          </svg><span>Hyperconverged Infrastructure (HCI)</span></a>
           <ul class="submenu collapse">
             <li> <a>
               <div class="form-check">
@@ -269,7 +268,7 @@
           </ul>
         </li>
       </ul>
-      <div class="get-bant"> <a href="#"><img src="images/Get-bant.svg" alt="Get to BANT"> <span>Get to BANT</span></a> </div>
+      <div class="get-bant hideSidebar" id="getBantCollapse"> <a href="#"><img src="images/Get-bant.svg" alt="Get to BANT"> <span>Get to BANT</span></a> </div>
     </nav>
   </div>
   <!-- Page Content  -->
@@ -347,7 +346,7 @@
   <div id="sidebar1OverlayControl" class="">
     <nav id="sidebar1" class="mediaDevice">
       <button type="button" id="sidebar1HideBtn" class="faq-hide-btn MenuHide"></button>
-      <div class="sidebar-header">
+      <div class="sidebar-header faq-sidebar-header">
         <div class="icon-wrapper"> <img src="images/purple-icon.svg" alt="Purple Icon"> </div>
         <h3>Did you Know?</h3>
       </div>
@@ -370,7 +369,7 @@
           <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
             <div class="card-body">
               <p>Mention HPE has a trade-in program. 
-                Reference: https://promotions.ext.hpe.com/WMCF.Web/us/en/landing/promotion/89705/</p>
+                Reference: <a href="https://promotions.ext.hpe.com/WMCF.Web/us/en/landing/promotion/89705/" target="_blank">Click here</a> </p>
             </div>
           </div>
         </div>
@@ -449,10 +448,8 @@
 						if(opened_submenu){
 							new bootstrap.Collapse(opened_submenu);
 						}
-
 			  		}
 		  		}
-
 			});
 		})
 
@@ -462,8 +459,9 @@
 <script type="text/javascript">
         $(document).ready(function () {
             $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
-				 $('.btn-left').toggleClass('active');
+              $('#sidebar').toggleClass('active');
+              $('#getBantCollapse').toggleClass('active');
+				      $('.btn-left').toggleClass('active');
             });
         });
     </script> 
@@ -471,9 +469,10 @@
         /*sidebar hide and show function */
         $(document).ready(function () {
             $('#sidebarHideBtn').on('click', function () {
-                $('#sidebar').addClass('hideSidebar');		        
-                $('#sidebarHideBtn').addClass('MenuHide');
-                $('#sidebarOverlayControl').removeClass('sidebar-overlay'); 
+              $('#sidebar').addClass('hideSidebar');		        
+              $('#sidebarHideBtn').addClass('MenuHide');
+              $('#sidebarOverlayControl').removeClass('sidebar-overlay'); 
+              $('#getBantCollapse').addClass('hideSidebar');	
             });
         });
         $(document).ready(function () {
@@ -481,21 +480,23 @@
               $('#sidebar').removeClass('hideSidebar');	
               $('#sidebarHideBtn').removeClass('MenuHide');
               $('#sidebarOverlayControl').addClass('sidebar-overlay');	
+              $('#getBantCollapse').removeClass('hideSidebar');	
             });
         });
-
         /*FAQ sidebar hide and show function For Mobile */
         $(document).ready(function () {
-            $('.faq-hide-btn').on('click', function () {
-                $('#sidebar1').removeClass('showSidebar1');		        
-                $('#sidebar1OverlayControl').removeClass('sidebar1-overlay');	
-                $('#sidebar1HideBtn').addClass('MenuHide');
+            $('#sidebar1HideBtn').on('click', function () {
+              $('#sidebar1').addClass('hideSidebar1');
+              $('#sidebar1OverlayControl').removeClass('sidebar1-overlay');
+              $('#sidebar1HideBtn').addClass('MenuHide');
             });
         });
         $(document).ready(function () {
-            $('#faqShowBtn').on('click', function () {
-              $('#sidebar1').addClass('showSidebar1');	
-              $('#sidebar1OverlayControl').addClass('sidebar1-overlay');	
+            $('#faqShowBtn').on('click', function () {              
+              $('#sidebar1').removeClass('showSidebar1');
+              $('#sidebar1').removeClass('hideSidebar1');
+              $('#sidebar1').addClass('showSidebar1');
+              $('#sidebar1OverlayControl').addClass('sidebar1-overlay');
               $('#sidebar1HideBtn').removeClass('MenuHide');
             });
         });
@@ -503,8 +504,8 @@
 <script type="text/javascript">
         $(document).ready(function () {
             $('#sidebarCollapse1').on('click', function () {
-                $('#sidebar1').toggleClass('active');
-				$('.btn-right').toggleClass('active');
+              $('#sidebar1').toggleClass('active');
+				      $('.btn-right').toggleClass('active');
             });
         });
     </script>

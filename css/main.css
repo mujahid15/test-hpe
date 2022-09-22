@@ -120,9 +120,11 @@ button:focus {
   position: relative;
   background: #EEE;
   color: #fff;
-  transition: all 0.3s;
-  max-height: 100vh;
+  transition: all 0.5s;
+  /* max-height: 100vh; */
   min-height: 100vh;
+  height: 100%;
+  overflow-x: hidden;
 }
 .list-unstyled {
    /*max-height: 100vh;
@@ -169,12 +171,17 @@ button:focus {
   display: none;
 }
 #sidebar .get-bant {
-  position: absolute;
+  position: fixed;
   bottom: 0px;
-  width: 100%;
+  left: 0px;
+  text-align: left;
+  max-width: 300px;
+  min-width: 300px;
+  transition: all 0.3s;
+  overflow-x: hidden;
 }
 #sidebar .get-bant a {
-  transition: all 0.3s;
+  transition: all 0.5s;
   font-size: 12px;
   font-weight: 600;
   color: #fff;
@@ -202,7 +209,8 @@ button:focus {
   background-color: #fff;
 }
 .sidebar .nav-link span {
-    padding-left: 5px;
+    padding-left: 0px;
+    padding-top: 5px;
 }
 .sidebar .nav-link img {
   padding-right: 6px;
@@ -216,6 +224,8 @@ button:focus {
   background-color: #01A982;
 }
 .sidebar .nav-link svg {
+  float: left;
+  margin-right: 10px;
   /*padding-right: 2px;*/
 }
 .sidebar .nav-link:hover svg, .sidebar .nav-link:hover svg #Path_141, .sidebar .nav-link:hover svg #Path_101, .sidebar .nav-link:hover svg #Path_102, .sidebar .nav-link:hover svg #Path_104, .sidebar .nav-link:hover svg #Path_105, .sidebar .nav-link:hover svg #Path_109, .sidebar .nav-link:hover svg #Path_110, .sidebar .nav-link:hover svg #Path_111, .sidebar .nav-link:hover svg #Path_116, .sidebar .nav-link:hover svg #Path_118, .sidebar .nav-link:hover svg #Path_123, .sidebar .nav-link:hover svg #Path_124, .sidebar .nav-link:hover svg #Path_125, .sidebar .nav-link:hover svg #Path_126, .sidebar .nav-link:hover svg #Rectangle_21, .sidebar .nav-link:hover svg #Rectangle_22, .sidebar .nav-link:hover svg #Rectangle_23, .sidebar .nav-link:hover svg #Rectangle_31, .sidebar .nav-link:hover svg #Rectangle_32, .sidebar .nav-link:hover svg #Rectangle_33, .sidebar .nav-link:hover svg #Rectangle_34, .sidebar .nav-link:hover svg #Rectangle_35, .sidebar .nav-link:hover svg #Rectangle_36, .sidebar .nav-link:hover svg #Rectangle_37, .sidebar .nav-link:hover svg #Rectangle_38, .sidebar .nav-link:hover svg #Path_126 {
